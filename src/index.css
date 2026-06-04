@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37; /* To jest teraz nowy sposób definiowania kolorów */
+}
