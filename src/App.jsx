@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import WatchCard from './components/WatchCard';
 
-const API = 'http://localhost:3001';
+const API = 'https://moje-auto-api.onrender.com';
 
 function App() {
   const [watches, setWatches] = useState([]);
