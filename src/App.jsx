@@ -181,7 +181,7 @@ fetch(`${API}/watches`, {
       )}
 
       <nav className={`fixed w-full z-50 p-8 flex justify-between items-center mix-blend-difference ${serverOffline ? 'top-8' : 'top-0'}`}>
-        <div className="text-xl font-serif tracking-[0.2em]">AUTOMOTIVE</div>
+        <div className="text-xl font-serif tracking-[0.2em]">PrestigeDrive</div>
         <div className="hidden md:flex space-x-8 text-[9px] uppercase tracking-[0.4em] items-center">
           
           {/* NOWE: Przełącznik Walut z prawej strony */}
