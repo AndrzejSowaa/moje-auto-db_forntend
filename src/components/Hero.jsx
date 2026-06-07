@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://www.netcarshow.com/R/Lamborghini-Urus_S-2023-thb.jpg"
+          src="https://images.unsplash.com/photo-1621135802920-133df287f89c?q=80&w=1920&auto=format&fit=crop"
           className="w-full h-full object-cover opacity-60"
           alt="" 
         />
