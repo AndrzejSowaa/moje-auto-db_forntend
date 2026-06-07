@@ -45,10 +45,21 @@ function App() {
       .catch(err => console.error('Błąd pobierania kursów NBP:', err));
 
     // Pobieranie zegarków z Twojego serwera
-    fetch(`${API}/watches`)
-      .then(res => { if (!res.ok) throw new Error(); return res.json(); })
-      .then(data => { setWatches(data); setServerOffline(false); })
-      .catch(() => setServerOffline(true));
+    const watchHeaders = {
+  'Content-Type': 'application/json'
+};
+
+if (token) {
+  watchHeaders['Authorization'] = `Bearer ${token}`;
+}
+
+fetch(`${API}/watches`, {
+  method: 'GET',
+  headers: watchHeaders
+})
+  .then(res => { if (!res.ok) throw new Error(); return res.json(); })
+  .then(data => { setWatches(data); setServerOffline(false); })
+  .catch(() => setServerOffline(true));
 
     if (token) {
       fetch(`${API}/inquiries`, { headers: { 'Authorization': `Bearer ${token}` } })

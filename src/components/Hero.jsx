@@ -3,7 +3,7 @@ const Hero = () => {
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=2000"
+          src="https://www.netcarshow.com/R/Lamborghini-Urus_S-2023-thb.jpg"
           className="w-full h-full object-cover opacity-60"
           alt="" 
         />
@@ -12,7 +12,7 @@ const Hero = () => {
 
       <div className="relative z-10 text-center px-4">
         <span className="text-gold tracking-[0.5em] uppercase text-xs mb-4 block">
-          Szwajcarska Precyzja
+          Inżynieria Marzeń
         </span>
         
         <h1 className="text-6xl md:text-8xl font-serif italic mb-8 tracking-tighter text-white">
@@ -23,7 +23,7 @@ const Hero = () => {
           href="#kolekcja" 
           className="border border-white/30 px-12 py-4 text-[10px] uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all inline-block backdrop-blur-sm"
         >
-          Pokaż zegarki
+          Pokaż Kolekcję
         </a>
       </div>
     </section>
