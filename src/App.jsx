@@ -44,7 +44,7 @@ function App() {
       })
       .catch(err => console.error('Błąd pobierania kursów NBP:', err));
 
-    // Pobieranie zegarków z Twojego serwera
+    // Pobieranie samochodów z Twojego serwera
     const watchHeaders = {
   'Content-Type': 'application/json'
 };
@@ -279,7 +279,7 @@ fetch(`${API}/watches`, {
              </select>
              <input type="text" placeholder="Link do zdjęcia" value={newWatch.image_url} onChange={e => setNewWatch({...newWatch, image_url: e.target.value})} className="col-span-2 bg-black/50 p-3 outline-none rounded border border-white/10" required />
              <textarea placeholder="Opis produktu..." value={newWatch.description} onChange={e => setNewWatch({...newWatch, description: e.target.value})} className="col-span-2 bg-black/50 p-3 outline-none rounded border border-white/10 min-h-[80px]" />
-             <button type="submit" className="col-span-2 bg-gold text-black py-3 font-bold rounded hover:bg-white transition">Dodaj Zegarek do bazy</button>
+             <button type="submit" className="col-span-2 bg-gold text-black py-3 font-bold rounded hover:bg-white transition">Dodaj Samochód do bazy</button>
           </form>
         )}
 
@@ -306,7 +306,7 @@ fetch(`${API}/watches`, {
               <form onSubmit={handleAuth} className="flex flex-col gap-4">
                 <input type="email" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} className="bg-black/50 p-3 rounded border border-white/10 outline-none focus:border-gold" required/>
                 <input type="password" placeholder="Hasło" value={password} onChange={e => setPassword(e.target.value)} className="bg-black/50 p-3 rounded border border-white/10 outline-none focus:border-gold" required/>
-                <button className="bg-gold text-black py-3 mt-2 rounded font-bold hover:bg-white">{isLoginMode ? 'Zaloguj się' : 'Zarejestruj się'}</button>
+                <button className="bg-gold text-black py-3 mt-2 rounded font-bold hover:bg-white">{isLoginMode ? 'Zaloguj się admin@poczta.pl hasło: puchatek123' : 'Zarejestruj się'}</button>
               </form>
               <button onClick={() => setIsLoginMode(!isLoginMode)} className="text-xs text-gray-400 hover:text-white mt-4 border-t border-white/10 pt-4">
                 {isLoginMode ? 'Nie masz konta? Zarejestruj się' : 'Masz już konto? Zaloguj się'}
