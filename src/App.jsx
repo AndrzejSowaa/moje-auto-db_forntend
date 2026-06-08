@@ -302,7 +302,7 @@ fetch(`${API}/watches`, {
         <div className="border border-white/10 bg-white/5 rounded-2xl min-h-[500px] flex overflow-hidden">
           {!token ? (
             <div className="m-auto flex flex-col gap-4 w-full max-w-xs p-6">
-              <h3 className="text-xl font-serif text-center mb-4">{isLoginMode ? "Panel Logowania" + <br /> + "login: admin@poczta.pl" + <br /> + "hasło: puchatek123" : 'Tworzenie Konta'}</h3>
+              <h3 className="text-xl font-serif text-center mb-4">{isLoginMode ? "Panel Logowania \n login: admin@poczta.pl \n hasło: puchatek123" : 'Tworzenie Konta'}</h3>
               <form onSubmit={handleAuth} className="flex flex-col gap-4">
                 <input type="email" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} className="bg-black/50 p-3 rounded border border-white/10 outline-none focus:border-gold" required/>
                 <input type="password" placeholder="Hasło" value={password} onChange={e => setPassword(e.target.value)} className="bg-black/50 p-3 rounded border border-white/10 outline-none focus:border-gold" required/>
