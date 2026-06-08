@@ -41,7 +41,7 @@ const WatchCard = ({ id, brand, model, price_pln, status, image_url, description
 
       {isEditing ? (
         <form onSubmit={handleSave} className="p-6 flex flex-col gap-3 bg-black/95 h-full">
-          <h4 className="text-gold text-xs uppercase tracking-widest text-center mb-2">Edycja Zegarka</h4>
+          <h4 className="text-gold text-xs uppercase tracking-widest text-center mb-2">Edycja Samochodu</h4>
           <input type="text" value={editData.brand} onChange={e => setEditData({...editData, brand: e.target.value})} className="bg-white/10 text-white text-xs p-2 rounded outline-none border border-white/20" placeholder="Marka" required />
           <input type="text" value={editData.model} onChange={e => setEditData({...editData, model: e.target.value})} className="bg-white/10 text-white text-xs p-2 rounded outline-none border border-white/20" placeholder="Model" required />
           
